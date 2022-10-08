@@ -112,7 +112,7 @@ msgstr "Añadir todos los apuntes contables"
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.view_move_form
 msgid "Add to Debit Order"
-msgstr "Añadir a orden de cobro"
+msgstr "Añadir a orden de pago"
 
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.view_move_form
@@ -389,13 +389,13 @@ msgstr "Moneda de la transacción de pago"
 #. module: account_payment_order
 #: model_terms:ir.ui.view,arch_db:account_payment_order.print_account_payment_order_document
 msgid "Debit Order"
-msgstr "Órdenes de cobro"
+msgstr "Órdenes de pago"
 
 #. module: account_payment_order
 #: model:ir.actions.act_window,name:account_payment_order.account_payment_order_inbound_action
 #: model:ir.ui.menu,name:account_payment_order.account_payment_order_inbound_menu
 msgid "Debit Orders"
-msgstr "Órdenes de cobro"
+msgstr "Órdenes de pago"
 
 #. module: account_payment_order
 #: code:addons/account_payment_order/models/account_payment_order.py:0
@@ -407,7 +407,7 @@ msgstr "Línea de adeudo de banco %s"
 #: code:addons/account_payment_order/models/account_payment_order.py:0
 #, python-format
 msgid "Debit order %s"
-msgstr "Orden de cobro %s"
+msgstr "Orden de pago %s"
 
 #. module: account_payment_order
 #: model:ir.model.fields,field_description:account_payment_order.field_account_payment_mode__default_date_prefered
