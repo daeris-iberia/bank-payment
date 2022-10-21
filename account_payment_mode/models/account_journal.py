@@ -10,6 +10,7 @@ class AccountJournal(models.Model):
     _inherit = "account.journal"
 
     def _default_outbound_payment_methods(self):
+        # Evitar el error -- Algunos métodos de pago que se supone que son únicos ya existen en otro lugar
         #all_out = self.env["account.payment.method"].search(
         #    [("payment_type", "=", "outbound")]
         #)
@@ -17,6 +18,7 @@ class AccountJournal(models.Model):
         return all_out
 
     def _default_inbound_payment_methods(self):
+        # Evitar el error -- Algunos métodos de pago que se supone que son únicos ya existen en otro lugar
         #all_in = self.env["account.payment.method"].search(
         #    [("payment_type", "=", "inbound")]
         #)
