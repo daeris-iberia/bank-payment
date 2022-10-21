@@ -10,15 +10,17 @@ class AccountJournal(models.Model):
     _inherit = "account.journal"
 
     def _default_outbound_payment_methods(self):
-        all_out = self.env["account.payment.method"].search(
-            [("payment_type", "=", "outbound")]
-        )
+        #all_out = self.env["account.payment.method"].search(
+        #    [("payment_type", "=", "outbound")]
+        #)
+        all_out = self.env.ref('account.account_payment_method_manual_out')
         return all_out
 
     def _default_inbound_payment_methods(self):
-        all_in = self.env["account.payment.method"].search(
-            [("payment_type", "=", "inbound")]
-        )
+        #all_in = self.env["account.payment.method"].search(
+        #    [("payment_type", "=", "inbound")]
+        #)
+        all_in = self.env.ref('account.account_payment_method_manual_in')
         return all_in
 
     @api.constrains("company_id")
